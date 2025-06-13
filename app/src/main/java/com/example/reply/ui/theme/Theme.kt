@@ -20,6 +20,7 @@ import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
@@ -117,6 +118,18 @@ fun AppTheme(
 
     MaterialTheme(
         colorScheme = colors,
+        typography = typography,
         content = content
     )
+
+    Text(
+        text = "Hello M3 theming",
+        style = MaterialTheme.typography.titleLarge
+    )
+
+    Text(
+        text = "you are learning typography",
+        style = MaterialTheme.typography.bodyMedium
+    )
+
 }
